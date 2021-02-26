@@ -1,4 +1,5 @@
 Project dedicated global variable "SpeechRecognition".
+Project also includes web server built on Node JS.
 
 LIVE DEMO:
 
