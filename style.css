@@ -1,15 +1,20 @@
-html {
-    font-size: 10px;
+  h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+    color: white;
+    text-align: center;
   }
 
   body {
     background: url("background.png");
     font-family: 'helvetica neue';
-    font-weight: 200;
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .words {
+    user-select: none;
+    outline: none;
     max-width: 500px;
     margin: 80px auto;
     background: white;
@@ -17,8 +22,7 @@ html {
     box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
     padding: 1rem 2rem 1rem 2rem;
     position: relative;
-    line-height: 5rem;
-    outline: none;
+    line-height: 1rem;
     text-shadow: 2px 2px 5px rgb(185, 185, 185);
     color: black;
   }
