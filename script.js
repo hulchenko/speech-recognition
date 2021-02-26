@@ -18,7 +18,7 @@ recognition.addEventListener("result", e => {
 
      p.textContent = transcript; //append results to p element
      if (e.results[0].isFinal) {
-         p = document.createElement("p");
+         p = document.createElement("p"); //create a new p element, every time person speaks, as the default setting was overwriting the existing.
          words.appendChild(p);
      }
 });
