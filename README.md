@@ -19,6 +19,6 @@ This simple app demonstrates how to use the Web Speech API for real-time speech 
 
 ### Live Demo:
 
-You can access the live demo of the app here: https://hulchenko.github.io/speech-recognition-nodejs/
+You can access the live demo of the app here: https://hulchenko.github.io/speech-recognition/
 
 Ensure your mic is on and enjoy!
