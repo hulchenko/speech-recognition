@@ -1,8 +1,17 @@
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; //global variable that lives in browser. First one is for Firefox, second one is for Chrome.
 const recognition = new SpeechRecognition();
 recognition.interimResults = true; //for browser to differentiate speech pauses
-
 const placeholder = document.getElementById("placeholder");
+
+// listen for enabled microphone
+navigator.mediaDevices
+  .getUserMedia({ audio: true })
+  .then((_) => {
+    placeholder.innerHTML = "Words will populate as you speak. Give it a try!";
+  })
+  .catch((_) => {
+    placeholder.innerHTML = "Oops, the microphone is disabled.";
+  });
 
 recognition.addEventListener("result", (e) => {
   placeholder.style.display = "none";
